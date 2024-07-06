@@ -1,0 +1,306 @@
+html{
+    background-color: rgba(0, 0, 0, 0.267);
+}
+main{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+main .info{
+    background-color: #E3E7EB;
+    padding: 10PX 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+main aside .perfil{
+    width: 160px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-top-left-radius:150px ;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius:150px ;
+    border-bottom-right-radius: 150px;
+}
+
+main aside .perfil img{
+    margin-top: -50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+main aside .perfil h3{
+    margin-top: 25px;
+}
+
+main aside .perfil p{
+    margin-top: -10px;
+}
+
+main aside .informacion{
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.434);
+}
+
+main aside .informacion ul li{
+    margin-top: 10px;
+}
+
+main aside .informacion ul li a{
+    text-decoration: crimson underline;
+    color: black;
+}
+
+main aside .informacion ul li a:hover{
+    background-color: white;
+    color:crimson;
+    text-decoration:none;
+    padding: 5px;
+    border-radius: 2px;
+    font-weight: 900;
+}
+
+main aside .contacto{
+    border-top: 1px solid rgba(0, 0, 0, 0.434)
+}
+
+main aside .contacto .telefono, .email, .mapa{
+    display: flex;
+    align-items: center;
+}
+
+main aside .contacto img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+main aside .contacto div{
+    margin-top: -10px;
+}
+
+
+main section .nombre h1{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main section .nombre p{
+    font-size: x-large;
+    font-weight: 800;
+    margin-top: -50px;
+    text-align: end;
+}
+
+main section .laboral{
+    border-top: 1px solid rgba(0, 0, 0, 0.434);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.434);
+}
+
+main section .laboral article, main section .formacion article {
+    margin-left: 25px;
+}
+
+main section .laboral .trabajo h4{
+    margin-top: -6px;
+}
+
+main section .laboral .trabajo h5{
+    margin-top: -20px;
+}
+
+main section .laboral .trabajo span{
+    font-weight: 900;
+}
+
+main section .laboral ul{
+    margin-top: -20px;
+}
+
+main section .formacion{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.434);
+}
+
+main section .formacion .estudio h4{
+    margin-top: -6px;
+}
+
+main section .formacion .estudio h5{
+    margin-top: -20px;
+}
+
+main section .formacion p{
+    margin-top: -20px;
+}
+
+main section .otros{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+main section .otros .herramientas{
+    border-right: 1px solid rgba(0, 0, 0, 0.434);
+    padding: 0 20px;
+}
+
+main section .otros .idiomas{
+    margin-left: 20px;
+}
+
+footer{
+    width: 50%;
+    padding: 25px 25px;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+
+footer .moreInfo{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .moreInfo a img{
+    width: 30px;
+    height: 30px;
+}
+
+footer .moreInfo a .jobs{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    main .info{
+        margin-left: 25px;
+        padding: 10PX 20px;
+        border-radius: 10px;
+    }
+    
+
+    main .experiencia-formacion{
+        padding: 15px;
+    }
+
+    main section .nombre h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    main section .nombre p{
+        font-size: large;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    footer{
+        width: 89.4%;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        width: 100%;
+    }
+
+    main section .nombre h1{
+        font-size: 30px;
+    }
+
+    main section .nombre p{
+        font-size: 10px;
+        margin-top: -20px;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    main {
+        width: 90%;
+    }
+
+    footer {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px){
+    main {
+        width: 80%;
+    }
+    
+    footer {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1700px){
+    main {
+        width: 70%;
+    }
+
+    footer {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1800px){
+    main {
+        width: 60%;
+    }
+
+    footer {
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px){
+    main section .nombre h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    main section .nombre p{
+        font-size: small;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    main .info{
+        margin-left: 25px;
+        padding: 10PX 10px;
+        border-radius: 10px;
+    }
+    
+}
